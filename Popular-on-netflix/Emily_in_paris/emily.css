@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: #181818;
+}
+nav{
+    background-color: black;
+}
+nav .logo{
+    width: 120px;
+    margin-left: 20px;
+}
+nav .profile{
+    width: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    max-width: 100%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+.banner{
+    background-image: linear-gradient(90deg, #181818 10%, hsla(0, 0%, 9%, .98) 20%, hsla(0, 0%, 9%, .97) 25%, hsla(0, 0%, 9%, .95) 35%, hsla(0, 0%, 9%, .94) 40%, hsla(0, 0%, 9%, .92) 45%, hsla(0, 0%, 9%, .9) 50%, hsla(0, 0%, 9%, .87) 55%, hsla(0, 0%, 9%, .82) 60%, hsla(0, 0%, 9%, .75) 65%, hsla(0, 0%, 9%, .63) 70%, hsla(0, 0%, 9%, .45) 75%, hsla(0, 0%, 9%, .27) 80%, hsla(0, 0%, 9%, .15) 85%, hsla(0, 0%, 9%, .08) 90%, hsla(0, 0%, 9%, .03) 95%, hsla(0, 0%, 9%, 0)),url(emily_assets/jpg/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+.banner .banner-content{
+    padding: 12% 6%;
+}
+.banner .banner-content .banner-title img{
+    width: 600px;
+    height: 110px;
+}
+body .banner .banner-content .banner-title h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: arial;
+    color: #715d90;
+    letter-spacing: 1px;
+    padding: 2% 0%;
+}
+.title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: arial;
+    color: #715d90;
+    letter-spacing: 1px;
+    padding: 2% 0%;
+}
+.banner .banner-content .banner-title .banner-buttons{
+    padding-top: 3%;
+}
+
+.banner .banner-content .banner-title .banner-buttons .play{
+    color: red;
+    background-color: #000000;
+    padding: 1% 2%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-left: 60px;
+}
+.banner .banner-content .banner-title .banner-buttons .play a{
+    color: red;
+    text-decoration: none;
+}
+.banner .banner-content .banner-title .banner-buttons .info{
+    color: red;
+    background-color: #000000;
+    padding: 1% 2%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    margin-left: 25px;
+}
+.banner .banner-content .banner-title .banner-buttons .info:hover{
+    cursor:pointer;
+    transform: scale(1.09);
+}
+.banner .banner-content .banner-title .banner-buttons .play:hover{
+    cursor:pointer;
+    transform: scale(1.09);
+}
+.banner .banner-content .banner-title p{
+    max-width: 475px;
+    font-size: 1rem;
+    font-family: 'Times New Roman';
+    padding-top: 1%;
+}
+section h1{
+    color: #fff;
+    font-family: arial;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0% 10% 0% 6.5%;
+}
+section .posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: none;
+    padding: 50px 0px 40px 90px;
+    /* margin: 1% 0.5%; */
+}
+section .posters .posters-title{
+    display: flex;
+    /* padding-right: 40px; */
+}
+section .posters .posters-title img{
+    padding-right: 20px;
+    height: 350px;
+    width: 600px;
+}
+section .posters .posters-title a {
+    text-decoration: none;
+    color: white;
+}
+section .posters .posters-title a h3{
+    padding-top: 8px;
+}
+section .episodes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* overflow-y: none;
+    overflow-x: none; */
+}
+section .episodes .episodes-title{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 90px;
+}
+section .episodes .episodes-title .table-cell img{
+    /* padding: 10px 0px 10px 90px; */
+    width: 350px;
+    padding-right: 20px;
+    /* padding-bottom: 200px; */
+    margin-top: 20px;
+}
+section .episodes .episodes-title .table-cell h3{
+    color: white;
+}
+section .episodes .episodes-title .table-cell p{
+    color: #7b7b7b;
+    padding-bottom: 15px;
+}
+section h2 {
+    color: #fff;
+    font-family: arial;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0% 10% 0% 6.5%;
+}
+section h4 {
+    color: #fff;
+    font-family: arial;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0% 10% 0% 6.5%;
+}
+section .line {
+    color: #7b7b7b;
+    font-family: arial;
+    font-weight: 600;
+    padding: 0% 10% 0% 6.5%;
+    margin: 6px 10px 0px 0px;
+}
+footer{
+    padding: 50px 6% 10px;
+    border-top: 0px solid #666;
+    color: #666;
+}
+footer h1{
+    color: white;
+    /* padding: 20px 0px 10px 90px; */
+}
+footer .row{
+    display: flex;
+    align-items: flex-start;
+    padding: 1% 0%;
+}
+footer .column{
+    margin: 0% 3% 0% 0%;
+}
+footer .row .column p{
+    font-size: 17px;
+}
